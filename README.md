@@ -50,19 +50,25 @@ For Example: curl -XPOST -d '{"operation":"divide","arguments":[4,7]}' "http://l
 ```
 By adding the following as web address in address bar of google chrome: http://localhost:8000/multiply/3/-99
 Output in cmd/terminal: 127.0.0.1 - - [10/Dec/2021 07:44:40] "GET /multiply/3/-99 HTTP/1.1" 200 -
-Output in chrome: Output: -297.0
+Output in chrome: 
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.10.0
+Date: Fri, 10 Dec 2021 20:26:42 GMT
+Content-type: text/plain
+Output: -297.0
 ```
 - For question 1.(b):
 ```
-Running the following command in new cmd: curl -i -X POST -H "Content-Type:application/json" -d "{  \"operation\" : \"divide\",  \"arguments\" : [400,6] }" http://localhost:8000
-Running the following command in new Linux/Ubuntu/Mac terminal: curl -XPOST -d '{"operation":"divide","arguments":[400,6]}' "http://localhost:8080"
+Running the following command in new cmd: curl -i -X POST -H "Content-Type:application/json" -d "{  \"operation\" : \"divide\",  \"arguments\" : [2,4] }" http://localhost:8000
+Running the following command in new Linux/Ubuntu/Mac terminal: curl -XPOST -d '{"operation":"divide","arguments":[2,4]}' "http://localhost:8080"
 Output in the main cmd/terminal: 
 127.0.0.1 - - [10/Dec/2021 09:15:23] "POST / HTTP/1.1" 200 -
 Output in the new cmd/terminal: 
 HTTP/1.0 200 OK
 Server: SimpleHTTP/0.6 Python/3.10.0
 Date: Fri, 10 Dec 2021 09:15:23 GMT
-Content-Length: 20
+Content-Length: 18
+{"Output": "-2.0"}
 ```
 ##### 6. To stop the server
 ```
