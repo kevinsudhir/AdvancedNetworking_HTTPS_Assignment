@@ -10,12 +10,9 @@ class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
 		self.send_header("Content-type", "text/plain")
 		self.end_headers()
 
-		self.wfile.write(bytes(self.headers.send_response))
-
 		address = self.path[1:].split('/')	
 
 		res = 0
-		
 		try:
 			# Printing error and skipping execution if address length is wrong
 			if(len(address)<3 or len(address)>3):
