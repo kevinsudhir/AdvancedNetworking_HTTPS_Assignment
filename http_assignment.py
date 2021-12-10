@@ -32,7 +32,7 @@ class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
 							error = 1							
 					# Printing error if operation is given wrong
 					else:	
-						res = "404 Client Error: URL NOT FOUND. Enter correct operator"
+						res = "Error: URL NOT FOUND. Enter correct operator"
 						error = 2
 			else:
 				error = 1
@@ -138,16 +138,16 @@ def div(x,y):
 def testcases(address):
 	special_characters = '"!@#$%^&*()-+?_=,<>/"'
 	if(len(address)<3 or len(address)>3):
-		result = "404 Client Error: URL NOT FOUND. Enter correct URL"
+		result = "Error: URL NOT FOUND. Enter correct URL"
 	elif address[1]=='' or address[2]=='':
 		if address[1]=='':
-			result = "404 Client Error: URL NOT FOUND. Argument 1 cannot be empty"
+			result = "Error: URL NOT FOUND. Argument 1 cannot be empty"
 		else:	
-			result = "404 Client Error: URL NOT FOUND. Argument 2 cannot be empty"
+			result = "Error: URL NOT FOUND. Argument 2 cannot be empty"
 	elif any(ch.isalpha() for ch in address[1]) or 	any(ch.isalpha() for ch in address[2]):
-		result = "404 Client Error: URL NOT FOUND. Arguments cannot have alphabets"
+		result = "Error: URL NOT FOUND. Arguments cannot have alphabets"
 	elif any(ch in special_characters for ch in address[1]) or any(ch in special_characters for ch in address[2]):
-		result = "404 Client Error: URL NOT FOUND. Arguments cannot have special characters"
+		result = "Error: URL NOT FOUND. Arguments cannot have special characters"
 	else:	
 		result=0
 
