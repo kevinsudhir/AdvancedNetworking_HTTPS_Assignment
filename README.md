@@ -6,7 +6,7 @@ Windows 11, Python 3.10.0 and Command Prompt
 ##### 1. Question: 1.(a). Using an appropriate library, write a small web server which takes URLs of the form "http://hostname:port/{add,subtract,multiply,divide}/x/y" and prints the result as a single text/plain result.  So the URL http://hostname:port/add/5/7Links to an external site. 
 1.(b). Extend your code to instead of taking a URL containing the expression, instead take JSON via a POST operation.
 
-Download the zip file from git repository or got clone the repository
+Download the zip file from git repository or git clone the repository
 File name to be run: http_server.py
 
 ##### 2. First step:
