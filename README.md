@@ -12,7 +12,8 @@ Windows 11, Python 3.10.0, Command Prompt and Google Chrome
 ```
 Download the zip file from git repository or clone the repository using:
 Command for cloning: git clone https://github.com/kevinsudhir/AdvancedNetworking_HTTPS_Assignment.git
-If downloaded the zip file then extract the file.
+To download zip file, simply open the following link https://github.com/kevinsudhir/AdvancedNetworking_HTTPS_Assignment/archive/refs/heads/main.zip
+This will download AdvancedNetworking_HTTPS_Assignment-main zip file and this can be extracted.
 After cloning or downloading zip file follow the below steps to execute the assignment.
 ```
 
