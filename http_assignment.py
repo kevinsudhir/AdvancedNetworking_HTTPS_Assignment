@@ -15,7 +15,7 @@ class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
 		res = 0
 		try:
 			# Printing error and skipping execution if address length is wrong
-			if(len(address)<3 or len(address)>3):
+			if(len(address)<3 or len(address)>3 or address[1]=='' or address[2]==''):
 				res = "404 Client Error: URL NOT FOUND. Enter correct URL"
 			else:	
 					# Executing respective operations from the data obtained through URL
@@ -71,7 +71,7 @@ class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
 					
 		# Except block to catch unexpected error				
 		except:
-			res="There is an error in input"
+			res="Error: Enter correct number of arguments"
 		
 		finally:
 			#Assigning Output	
