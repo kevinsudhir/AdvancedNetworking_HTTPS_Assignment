@@ -56,8 +56,13 @@ Output in chrome: Output: -297.0
 ```
 Running the following command in new cmd: curl -i -X POST -H "Content-Type:application/json" -d "{  \"operation\" : \"divide\",  \"arguments\" : [400,6] }" http://localhost:8000
 Running the following command in new Linux/Ubuntu/Mac terminal: curl -XPOST -d '{"operation":"divide","arguments":[400,6]}' "http://localhost:8080"
-Output in the main cmd/terminal: 127.0.0.1 - - [09/Dec/2021 23:48:18] "POST / HTTP/1.1" 200 -
-Output in chrome: {"Output": "66.667"}
+Output in the main cmd/terminal: 
+127.0.0.1 - - [10/Dec/2021 09:15:23] "POST / HTTP/1.1" 200 -
+Output in the new cmd/terminal: 
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.10.0
+Date: Fri, 10 Dec 2021 09:15:23 GMT
+Content-Length: 20
 ```
 ##### 6. To stop the server
 ```
