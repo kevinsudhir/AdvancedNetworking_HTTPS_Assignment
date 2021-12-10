@@ -14,12 +14,12 @@ Download the zip file from git repository or clone the repository using:
 Command for cloning: git clone https://github.com/kevinsudhir/AdvancedNetworking_HTTPS_Assignment.git
 To download zip file, simply open the following link https://github.com/kevinsudhir/AdvancedNetworking_HTTPS_Assignment/archive/refs/heads/main.zip
 This will download AdvancedNetworking_HTTPS_Assignment-main zip file and this can be extracted.
-After cloning or downloading zip file follow the below steps to execute the assignment.
+After cloning or downloading zip file follow the below steps or follow the extracted Readme_HTTP_Assignment.pdf to further execute the assignment.
 ```
 
 ##### 2. Second step:
 - File name to be run from the folder: http_assignment.py
-- Run the following command in command prompt/temrinal to execute the file according to installed Python environment:
+- Run the following command in command prompt/terminal to execute the file according to installed Python environment:
 ```
 py http_assignment.py or 
 python http_assignment.py or 
@@ -43,7 +43,7 @@ For Example: curl -i -X POST -H "Content-Type:application/json" -d "{  \"operati
 curl -XPOST -d '{"operation":"{add,subtract,multiply,divide}","arguments":[x,y]}' "http://localhost:8080"
 For Example: curl -XPOST -d '{"operation":"divide","arguments":[4,7]}' "http://localhost:8080"
 ```
-**Note**: This above command is to run in Linux/Ubuntu shell/terminal or Mac terminal as curl functions well in Mac/Linux/Ubuntu.
+**Note**: This above command is to run in Linux/Ubuntu shell/terminal or Mac terminal.
 
 ##### 5. Following are the results observed
 - For question 1.(a):
